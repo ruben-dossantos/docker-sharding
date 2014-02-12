@@ -16,14 +16,13 @@ deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen
 " > /etc/apt/sources.list
 
 mkdir -p /data/db
-
 mkdir -p /data/configdb
 
 apt-get -y update
 
 apt-get install -y --force-yes mongodb-10gen
 
-mongod --configsvr &
+#mongod --configsvr &
 
-/bin/bash
+#/bin/bash
 

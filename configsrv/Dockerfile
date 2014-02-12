@@ -3,7 +3,9 @@ FROM ubuntu:latest
 # Install start scripts and hosts file
 ADD install/bin/install-mongo /usr/bin/
 ADD install/bin/start-mongo /usr/bin/
-ADD install/mongo/initial-data.json /data/
+#ADD install/mongo/initial-data.json /data/
+RUN usr/bin/install-mongo
+
 # For MongoDB
 # EXPOSE 28017
 

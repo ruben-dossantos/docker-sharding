@@ -1,6 +1,7 @@
 all: 
-	docker build -t mongo:storage_test .
-	docker -i -t -dns 192.35.246.20 run mongo:storage_test /usr/bin/install-mongo
+	docker build -t mongo:config_svr .
+	#docker run -i -t -dns 192.35.246.20  mongo:storage_test /usr/bin/install-mongo
+	docker run -i -t mongo:config_svr /usr/bin/start-mongo
 clean:
 	./stop-mongo.sh
 	docker rmi mongo:storage_test

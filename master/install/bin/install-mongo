@@ -21,4 +21,4 @@ apt-get -y update
 
 apt-get install -y --force-yes mongodb-10gen
 
-/bin/bash
+#/bin/bash

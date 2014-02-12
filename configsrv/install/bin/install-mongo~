@@ -23,6 +23,7 @@ apt-get -y update
 
 apt-get install -y --force-yes mongodb-10gen
 
-mongod --configsvr
+mongod --configsvr &
 
 /bin/bash
+
