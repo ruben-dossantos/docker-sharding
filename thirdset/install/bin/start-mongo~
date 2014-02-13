@@ -1,5 +1,0 @@
-#!/bin/bash
-
-mongod --dbpath /data/example/firstset --replSet secondset --oplogSize 700 --rest &
-
-/bin/bash

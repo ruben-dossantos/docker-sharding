@@ -1,1 +1,0 @@
-{ "_id" : { "$oid" : "529610305ed2e4236e806d6e" }, "contact" : { "email" : "ruben.23@live.com.pt" }, "info" : { "first_name" : "ruben", "last_name" : "barros" }, "login" : { "providerId" : "userpass", "hasher" : "bcrypt", "password" : "$2a$10$QkkNc4TyOveZuFgxjcJORumM8xlJKXs6KzpZIvRGwedwP9t/L8hHO", "authMethod" : { "method" : "userPassword" } }, "user_type" : 0 }

@@ -1,5 +1,0 @@
-db.runCommand({"replSetInitiate" :
-                    {"_id" : "firstset2", "members" : [{"_id" : 1, "host" : "172.17.0.8:10001"},
-                                                      {"_id" : 2, "host" : "172.17.0.8:10002"},
-                                                      {"_id" : 3, "host" : "172.17.0.8:10003"}
-             ]}})
