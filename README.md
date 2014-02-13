@@ -1,4 +1,5 @@
-=====MongoDB Sharding using Docker=====
+MongoDB Sharding using Docker
+============================
 
 ...
 
