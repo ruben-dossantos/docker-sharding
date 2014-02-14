@@ -1,5 +1,7 @@
 #!/bin/bash
 
-mongod --dbpath /data/example/firstset --replSet thirdset --oplogSize 700 --rest &
+mkdir -p /data/db
+mkdir -p /data/example/thirdset
 
-/bin/bash
+mongod --dbpath /data/example/thirdset --replSet thirdset --oplogSize 700 --rest 
+
