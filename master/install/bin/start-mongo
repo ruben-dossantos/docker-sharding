@@ -2,4 +2,16 @@
 
 mkdir -p /data/db
 
+sh /usr/bin/start_configdb.sh
+
+sh /usr/bin/start_firstset.sh
+sh /usr/bin/start_secondset.sh
+sh /usr/bin/start_thirdset.sh
+
+mongo 127.0.0.1/admin /usr/bin/startSharding_firstset.js
+mongo 127.0.0.1/admin /usr/bin/startSharding_secondset.js
+mongo 127.0.0.1/admin /usr/bin/startSharding_thirdset.js
+
+mongo 127.0.0.1/admin /usr/bin/startSharding.js
+
 /bin/bash

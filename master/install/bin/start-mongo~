@@ -1,0 +1,13 @@
+#!/bin/bash
+
+mkdir -p /data/db
+
+mongos --configdb 172.17.0.2:27019,172.17.0.3:27019,172.0.4:27019 &
+
+mongo 172.17.0.5/admin /usr/bin/firstsetInit.js
+mongo 172.17.0.8/admin /usr/bin/secondsetInit.js
+mongo 172.17.0.11/admin /usr/bin/thirdsetInit.js
+
+mongo 127.0.0.1/admin /usr/bin/start-sharding.js
+
+/bin/bash

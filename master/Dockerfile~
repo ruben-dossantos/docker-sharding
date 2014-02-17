@@ -1,0 +1,8 @@
+FROM ruben:mongo
+
+# Install start scripts and hosts file
+ADD install/bin/start-mongo /usr/bin/
+ADD install/mongo/firstsetInit.js /usr/bin
+ADD install/mongo/secondsetInit.js /usr/bin
+ADD install/mongo/thirdsetInit.js /usr/bin
+ADD install/mongo/start-sharding.js /usr/bin

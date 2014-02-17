@@ -23,7 +23,7 @@ Then, you can add the replica sets
 
 Then you must enable sharding in a database
 
-    db.runCommand({enableShardin : "<database>"})
+    db.runCommand({enableSharding : "<database>"})
 
 Finally you must specify a collection and the key
 
