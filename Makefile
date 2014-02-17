@@ -25,7 +25,8 @@ all:
 	sh write_configInit.sh
 	sh write_firstsetInit.sh
 	sh write_secondsetInit.sh
-	sh write thirdsetInit.sh
+	sh write_thirdsetInit.sh
+	sh write_sharding.sh
 	docker build -t mongo:mongoserver master
 	docker run -i -t mongo:mongoserver /usr/bin/start-mongo
 

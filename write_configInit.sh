@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "#!/bin/bash" > master/install/mongo/start_configdb.sh
-echo -n "mongos --configdb" >> master/install/mongo/start_configdb.sh
+echo -n "mongos --configdb " >> master/install/mongo/start_configdb.sh
 ft=true
 while read ips
 do
@@ -19,3 +19,4 @@ do
 
 done < master/install/mongo/ips.txt
 echo -n " &" >> master/install/mongo/start_configdb.sh
+echo " " >> master/install/mongo/start_configdb.sh
