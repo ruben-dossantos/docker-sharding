@@ -1,0 +1,12 @@
+# Generated files
+master/install/mongo/firstsetInit.js
+master/install/mongo/ips.txt
+master/install/mongo/secondsetInit.js
+master/install/mongo/startSharding_firstset.js
+master/install/mongo/startSharding_secondset.js
+master/install/mongo/startSharding_thirdset.js
+master/install/mongo/start_configdb.sh
+master/install/mongo/start_firstset.sh
+master/install/mongo/start_secondset.sh
+master/install/mongo/start_thirdset.sh
+master/install/mongo/thirdsetInit.js
